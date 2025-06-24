@@ -3,7 +3,20 @@
 Aplikacja napisana w Symfony 6.  
 Pobiera dane z API `https://jsonplaceholder.typicode.com` i zapisuje je lokalnie w bazie PostgreSQL.
 
----
+## 🌐 Dostęp do aplikacji
+
+Aplikacja jest dostępna pod adresem:  
+🔗 [http://57.128.221.233/](http://57.128.221.233/)
+
+### 🔐 Dostępne ścieżki
+
+- `/login` – logowanie do aplikacji
+- `/api/posts` – API do listy postów
+
+### 👤 Dane testowego użytkownika
+
+- **E-mail:** `test@test.pl`
+- **Hasło:** `test123`
 
 ## 🔧 Technologie
 
