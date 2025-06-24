@@ -3,14 +3,18 @@
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\Get;
+use ApiPlatform\Metadata\GetCollection;
 use App\Repository\PostRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: PostRepository::class)]
 #[ApiResource(
+    operations: [new Get(), new GetCollection()],
     normalizationContext: ['groups' => ['post:read']]
 )]
+
 class Post
 {
     #[ORM\Id]
