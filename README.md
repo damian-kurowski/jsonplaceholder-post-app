@@ -79,7 +79,7 @@ Co robi ta komenda?
 Utworzenie nowego użytkownika (np. do logowania):
 
 ```bash
-php bin/console app:create-user jan.kowalski@gmail.com haslo123
+php bin/console app:create-user 
 ```
 
 Przykład:
